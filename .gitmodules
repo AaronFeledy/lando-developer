@@ -1,0 +1,20 @@
+[submodule "lando"]
+	path = lando
+	url = ../../lando/lando
+	branch = main
+[submodule "cli"]
+	path = cli
+	url = ../../lando/cli
+	branch = main
+[submodule "hyperdrive"]
+	path = hyperdrive
+	url = ../../lando/hyperdrive
+	branch = main
+[submodule "leia"]
+	path = leia
+	url = ../../lando/leia
+	branch = main
+[submodule "server"]
+	path = server
+	url = ../../lando/server
+	branch = master
