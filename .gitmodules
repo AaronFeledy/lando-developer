@@ -1,20 +1,24 @@
 [submodule "lando"]
 	path = lando
 	url = ../../lando/lando
-	branch = main
+	branch = .
 [submodule "cli"]
 	path = cli
 	url = ../../lando/cli
-	branch = main
+	branch = .
 [submodule "hyperdrive"]
 	path = hyperdrive
 	url = ../../lando/hyperdrive
-	branch = main
+	branch = .
 [submodule "leia"]
 	path = leia
 	url = ../../lando/leia
-	branch = main
+	branch = .
 [submodule "server"]
 	path = server
 	url = ../../lando/server
-	branch = master
+	branch = .
+[submodule "pkgs"]
+	path = pkgs
+	url = ../../AaronFeledy/lando-pkgs
+	branch = .
