@@ -1,0 +1,25 @@
+name: Periodic Tasks
+
+# Controls when the workflow will run
+on:
+  schedule:
+    # * is a special character in YAML so you have to quote this string
+    - cron:  '38 10,22 * * *'
+
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Update submodules
+      run: |
+        set -e
+        git config --global user.name "Aaron Feledy"
+        git config --global user.email "aaron@arrowonesolutions.com"
+        git submodule update --init --recursive
+        git add -A
+        git commit -m "Update submodules"
