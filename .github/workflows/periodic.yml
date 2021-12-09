@@ -4,7 +4,7 @@ name: Periodic Tasks
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '31 12,24 * * *'
+    - cron:  '38 5,17 * * *'
   workflow_dispatch:
 
 jobs:
