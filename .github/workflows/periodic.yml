@@ -4,7 +4,7 @@ name: Periodic Tasks
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '38 10,22 * * *'
+    - cron:  '31 12,24 * * *'
 
 jobs:
   # This workflow contains a single job called "build"
