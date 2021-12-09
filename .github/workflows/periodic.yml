@@ -22,6 +22,7 @@ jobs:
       run: |
         set -e
         git submodule update --remote
+        git config --global user.name "Aaron Feledy"
         git config --global user.email "aaron@arrowonesolutions.com"
         git submodule update --init --recursive
         git commit -am "Update submodules"
