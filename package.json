@@ -1,0 +1,16 @@
+{
+  "name": "lando-super",
+  "version": "1.0.0",
+  "description": "Development environment for Lando and its plugins",
+  "private": true,
+  "workspaces": [
+    "repos/*"
+  ],
+  "scripts": {
+    "postinstall": "node scripts/setup-repos.js"
+  },
+  "devDependencies": {
+    "fs-extra": "^11.1.0",
+    "simple-git": "^3.15.1"
+  }
+}

@@ -1,29 +1,32 @@
-name: Periodic Tasks
+name: Periodic Update
 
-# Controls when the workflow will run
 on:
-  #schedule:
-    ## * is a special character in YAML so you have to quote this string
-    #- cron:  '38 5,17 * * *'
-  workflow_dispatch:
+  # schedule:
+  #   - cron: '38 5 * * 0'  # Run every Sunday at 5:38am
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
-  # This workflow contains a single job called "build"
-  build:
+  update-repos:
     runs-on: ubuntu-latest
-
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        submodules: 'recursive'
+      - uses: actions/checkout@v2
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '18'
 
-    - name: Update submodules
-      run: |
-        set -e
-        git submodule update --remote
-        git config --global user.name "Aaron Feledy"
-        git config --global user.email "aaron@arrowonesolutions.com"
-        git submodule update --init --recursive --remote
-        git commit -am "Update submodules" || true
-        git push
+      - name: Install dependencies and setup repos
+        run: npm ci
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add -A
+          git diff-index --quiet HEAD || git commit -m "Update repositories"
+
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
