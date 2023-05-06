@@ -10,6 +10,7 @@
     { "name": "acquia", "url": "https://github.com/lando/acquia.git" },
     { "name": "backdrop", "url": "https://github.com/lando/backdrop.git" },
     { "name": "drupal", "url": "https://github.com/lando/drupal.git" },
+    { "name": "go", "url": "https://github.com/lando/go.git" },
     { "name": "joomla", "url": "https://github.com/lando/joomla.git" },
     { "name": "lagoon", "url": "https://github.com/lando/lagoon.git" },
     { "name": "lamp", "url": "https://github.com/lando/lamp.git" },
