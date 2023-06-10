@@ -4,7 +4,8 @@
   "description": "Development environment for Lando and its plugins",
   "private": true,
   "workspaces": [
-    "repos/*"
+    "repos/*",
+    "plugins/*"
   ],
   "scripts": {
     "postinstall": "node scripts/setup-repos.js"
