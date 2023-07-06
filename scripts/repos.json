@@ -25,6 +25,7 @@
     { "name": "mssql", "url": "https://github.com/lando/mssql.git" },
     { "name": "mysql", "url": "https://github.com/lando/mysql.git" },
     { "name": "nginx", "url": "https://github.com/lando/nginx.git" },
+    { "name": "node", "url": "https://github.com/lando/node.git" },
     { "name": "pantheon", "url": "https://github.com/lando/pantheon.git" },
     { "name": "php", "url": "https://github.com/lando/php.git" },
     { "name": "phpmyadmin", "url": "https://github.com/lando/phpmyadmin.git" },
