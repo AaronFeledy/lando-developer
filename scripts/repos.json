@@ -8,6 +8,7 @@
   ],
   "plugins": [
     { "name": "acquia", "url": "https://github.com/lando/acquia.git" },
+    { "name": "apache", "url": "https://github.com/lando/apache.git" },
     { "name": "backdrop", "url": "https://github.com/lando/backdrop.git" },
     { "name": "dotnet", "url": "https://github.com/lando/dotnet.git" },
     { "name": "drupal", "url": "https://github.com/lando/drupal.git" },
