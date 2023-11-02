@@ -2,6 +2,7 @@
   "repos": [
     { "name": "cli", "url": "https://github.com/lando/cli.git" },
     { "name": "core", "url": "https://github.com/lando/core.git" },
+    { "name": "core-next", "url": "https://github.com/lando/core-next.git" },
     { "name": "docs", "url": "https://github.com/lando/docs.git" },
     { "name": "hyperdrive", "url": "https://github.com/lando/hyperdrive.git" },
     { "name": "leia", "url": "https://github.com/lando/leia.git" }
