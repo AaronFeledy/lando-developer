@@ -5,7 +5,10 @@
     { "name": "core-next", "url": "https://github.com/lando/core-next.git" },
     { "name": "docs", "url": "https://github.com/lando/docs.git" },
     { "name": "hyperdrive", "url": "https://github.com/lando/hyperdrive.git" },
-    { "name": "leia", "url": "https://github.com/lando/leia.git" }
+    { "name": "leia", "url": "https://github.com/lando/leia.git" },
+    { "name": "blog", "url": "https://github.com/lando/blog.git" },
+    { "name": "events", "url": "https://github.com/lando/events.git" },
+    { "name": "website", "url": "https://github.com/lando/website.git" }
   ],
   "plugins": [
     { "name": "acquia", "url": "https://github.com/lando/acquia.git" },
