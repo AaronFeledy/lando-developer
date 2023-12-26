@@ -34,6 +34,7 @@
     { "name": "pantheon", "url": "https://github.com/lando/pantheon.git" },
     { "name": "php", "url": "https://github.com/lando/php.git" },
     { "name": "phpmyadmin", "url": "https://github.com/lando/phpmyadmin.git" },
+    { "name": "platformsh", "url": "https://github.com/lando/platformsh.git" },
     { "name": "postgres", "url": "https://github.com/lando/postgres.git" },
     { "name": "python", "url": "https://github.com/lando/python.git" },
     { "name": "redis", "url": "https://github.com/lando/redis.git" },
