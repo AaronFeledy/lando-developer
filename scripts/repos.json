@@ -8,7 +8,8 @@
     { "name": "leia", "url": "https://github.com/lando/leia.git" },
     { "name": "blog", "url": "https://github.com/lando/blog.git" },
     { "name": "events", "url": "https://github.com/lando/events.git" },
-    { "name": "website", "url": "https://github.com/lando/website.git" }
+    { "name": "website", "url": "https://github.com/lando/website.git" },
+    { "name": "setup-lando", "url": "https://github.com/lando/setup-lando.git" }
   ],
   "plugins": [
     { "name": "acquia", "url": "https://github.com/lando/acquia.git" },
