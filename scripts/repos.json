@@ -15,8 +15,10 @@
     { "name": "acquia", "url": "https://github.com/lando/acquia.git" },
     { "name": "apache", "url": "https://github.com/lando/apache.git" },
     { "name": "backdrop", "url": "https://github.com/lando/backdrop.git" },
+    { "name": "compose", "url": "https://github.com/lando/compose.git" },
     { "name": "dotnet", "url": "https://github.com/lando/dotnet.git" },
     { "name": "drupal", "url": "https://github.com/lando/drupal.git" },
+    { "name": "elasticsearch", "url": "https://github.com/lando/elasticsearch.git" },
     { "name": "go", "url": "https://github.com/lando/go.git" },
     { "name": "joomla", "url": "https://github.com/lando/joomla.git" },
     { "name": "lagoon", "url": "https://github.com/lando/lagoon.git" },
@@ -42,6 +44,7 @@
     { "name": "ruby", "url": "https://github.com/lando/ruby.git" },
     { "name": "solr", "url": "https://github.com/lando/solr.git" },
     { "name": "symfony", "url": "https://github.com/lando/symfony.git" },
+    { "name": "tomcat", "url": "https://github.com/lando/tomcat.git" },
     { "name": "varnish", "url": "https://github.com/lando/varnish.git" },
     { "name": "wordpress", "url": "https://github.com/lando/wordpress.git" }
   ]
