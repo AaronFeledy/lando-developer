@@ -3,6 +3,7 @@
     { "name": "cli", "url": "https://github.com/lando/cli.git" },
     { "name": "core", "url": "https://github.com/lando/core.git" },
     { "name": "docs", "url": "https://github.com/lando/docs.git" },
+    { "name": "gitpod", "url": "https://github.com/lando/gitpod.git" },
     { "name": "hyperdrive", "url": "https://github.com/lando/hyperdrive.git" },
     { "name": "leia", "url": "https://github.com/lando/leia.git" },
     { "name": "blog", "url": "https://github.com/lando/blog.git" },

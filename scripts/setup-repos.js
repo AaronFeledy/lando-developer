@@ -30,10 +30,10 @@ async function setupRepo(repo, targetDir) {
     if (await fs.pathExists(repoPath)) {
       console.log(`${repo.name} already exists. Checking for changes...`);
       const git = simpleGit(repoPath);
-      
+
       // Check if there are local changes
       const status = await git.status();
-      
+
       if (status.modified.includes('package-lock.json')) {
         console.log(`Resetting package-lock.json in ${repo.name}...`);
         await git.checkout(['--', 'package-lock.json']);
@@ -42,10 +42,10 @@ async function setupRepo(repo, targetDir) {
         console.log(`Local changes detected in ${repo.name}. Stashing changes...`);
         await git.stash(['save', `Automatic stash by setup script`]);
       }
-      
+
       console.log(`Pulling latest changes for ${repo.name}...`);
       await git.pull();
-      
+
       // Check if there was a stash and try to apply it
       const stashList = await git.stashList();
       if (stashList.all.length > 0) {
@@ -110,7 +110,7 @@ async function setupRepos() {
 
   console.log('Running npm install with SKIP_SETUP flag...');
 
-  const npmInstall = spawn('npm', ['install'], { 
+  const npmInstall = spawn('npm', ['install'], {
     cwd: path.join(__dirname, '..'),
     stdio: 'inherit',
     env: { ...process.env, [SKIP_SETUP_ENV]: 'true' }
