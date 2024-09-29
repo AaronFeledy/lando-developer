@@ -25,6 +25,7 @@
     { "name": "laravel", "url": "https://github.com/lando/laravel.git" },
     { "name": "lemp", "url": "https://github.com/lando/lemp.git" },
     { "name": "mailhog", "url": "https://github.com/lando/mailhog.git" },
+    { "name": "mailpit", "url": "https://github.com/lando/mailpit.git" },
     { "name": "mariadb", "url": "https://github.com/lando/mariadb.git" },
     { "name": "mean", "url": "https://github.com/lando/mean.git" },
     { "name": "memcached", "url": "https://github.com/lando/memcached.git" },
